@@ -64,7 +64,7 @@ export default App;
 // TODO: use some hooks
 // TODO[x]: state management. when parent and child share the same props, a change in that prop will cause a re-render of parent but will not if they have 0 dependencies. use state store management like redux to retrigger
 // TODO[x]: useCallback
-
+// TODO[x]: string literal attributes
 
 /**
  * No, it will not re-render. If you pass any props to the component from the parent component and you update that prop in children or that prop update in the parent component so both will re-render. But if the data or state has no dependency on the parent component so it will not cause a re-render in the parent component.
