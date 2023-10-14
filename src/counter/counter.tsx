@@ -14,6 +14,6 @@ export default function Counter() {
     setTimer();
   });
 
-  // TODO[x]: styling with classes from css modules
+  // TODO[STYLING]: styling with classes from css modules
   return <h1 className={styles.test}>counter {counter}</h1>;
 }

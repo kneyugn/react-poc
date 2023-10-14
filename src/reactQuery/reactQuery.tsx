@@ -11,18 +11,18 @@ async function fetchTodos() {
         { value: "sr", label: "study react" },
         { value: "spython", label: "study python" },
       ]);
-      //   reject(new Error("some Error"));
+      // reject(new Error("some Error"));
     }, 1000);
   });
 }
 
 function QuickToDo() {
-  // TODO[x]: useContext
+  // TODO[useContext]: useContext
   const name = useContext(NameContext);
   // error
   // todo returned could be undefined due to throwing of error
   // third argument takes initial data {initialData: data}
-  // TODO[x]: react query
+  // TODO[reactQuery]: react query
   const { isLoading, error, data } = useQuery<ToDoItem[] | undefined, Error>(
     "repoData",
     async () => {
@@ -60,7 +60,6 @@ function QuickToDo() {
 }
 
 const queryClient = new QueryClient();
-
 export default function ReactQ() {
   return (
     <QueryClientProvider client={queryClient}>

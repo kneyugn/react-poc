@@ -3,10 +3,10 @@ import { useEffect, useState, useRef } from "react";
 export type ToDoItem = { value: string; label: string };
 
 export default function ToDo() {
-  // TODO[x]: input ref
+  // TODO[ref]: input ref
   const inputRef = useRef<HTMLInputElement | null>(null);
 
-  // TODO[x]: useSetState typescript with empty array
+  // TODO[useState]: useSetState typescript with empty array
   const [todos, setToDos] = useState<ToDoItem[] | []>([]);
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function ToDo() {
   }, []);
 
   function handleInputChange(e: any) {
-    // TODO[x]: onKeyDown save the input value
+    // TODO[input]: onKeyDown save the input value
     if (e.key !== "Enter") {
       return;
     }
